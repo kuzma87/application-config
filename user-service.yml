@@ -6,7 +6,8 @@ spring:
     url: jdbc:postgresql://localhost/sc_user_service
     username: sc_user
     password: sc_password
-    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
   liquibase:
     enabled: false
 
