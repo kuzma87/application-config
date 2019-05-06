@@ -8,6 +8,7 @@ spring:
     password: sc_password
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
+    properties.hibernate.jdbc.lob.non_contextual_creation: true
   liquibase:
     enabled: false
 
