@@ -1,0 +1,17 @@
+server.port: 8083
+
+spring:
+  application.name: user-service
+  datasource:
+    url: jdbc:mysql://localhost/sc_user_service
+    username: sc_user
+    password: sc_password
+    driver-class-name: com.mysql.jdbc.Driver
+  liquibase:
+    enabled: false
+
+eureka:
+  client:
+    region: default
+    registryFetchIntervalSeconds: 5
+    serviceUrl.defaultZone: http://localhost:8082/eureka/

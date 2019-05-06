@@ -1,0 +1,10 @@
+server.port: 8085
+
+spring:
+  application.name: notification-service
+
+eureka:
+  client:
+    region: default
+    registryFetchIntervalSeconds: 5
+    serviceUrl.defaultZone: http://localhost:8082/eureka/
