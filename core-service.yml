@@ -6,7 +6,7 @@ spring:
     url: jdbc:mysql://localhost/sc_core_service
     username: sc_user
     password: sc_password
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: org.postgresql.Driver
   liquibase:
     enabled: false
 
